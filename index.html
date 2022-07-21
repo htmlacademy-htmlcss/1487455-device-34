@@ -360,5 +360,44 @@
       </a>
     </div>
   </footer>
+  <div class="modal-overlay"></div>
+  <form class="modal" action="https://echo.htmlacademy.ru/" method="post" data-modal="delivery">
+    <h2 class="modal__title heading">Доставка под заказ</h2>
+    <button class="modal__button-close js-modal-close element-states" type="button">
+      <svg aria-hidden="true" focusable="false" width="26" height="26" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="images/icons.svg#close"/>
+      </svg>
+    </button>
+    <p class="modal__control">
+      <label class="modal__label" for="name">Ваше имя:</label>
+      <input class="modal__input modal__input_user" type="text" name="name" id="name" placeholder="Введите имя">
+    </p>
+    <p class="modal__control">
+      <label class="modal__label" for="email">Ваш e-mail:</label>
+      <input class="modal__input modal__input_email" type="email" name="email" id="email" placeholder="Введите e-mail" value="почта">
+      <span class="modal__input-status modal__input-status_error">Забавный у вас адрес</span>
+    </p>
+    <p class="modal__control modal__control_big">
+      <label class="modal__label" for="product">Что нужно привезти:</label>
+      <input class="modal__input" type="text" name="product" id="product" placeholder="В свободной форме">
+    </p>
+    <div class="modal__control modal__control_small">
+      <label class="modal__label" for="amount">Количество:</label>
+      <div class="control-number">
+        <button class="control-number__toogle control-number__toogle_minus" type="button">
+          <svg aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="images/icons.svg#minus"/>
+          </svg>
+        </button>
+        <input class="control-number__input" type="number" name="amount" id="amount" min="1" max="100" step="1" value="1">
+        <button class="control-number__toogle control-number__toogle_plus" type="button">
+          <svg aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="images/icons.svg#plus"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <button class="modal__submit button-link button-link_colored element-states butt" type="submit">Отправить</button>
+  </form>
 </body>
 </html>
