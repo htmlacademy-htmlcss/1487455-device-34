@@ -218,6 +218,57 @@
         </div>
         <aside class="catalog-filter">
           <h2 class="catalog__title button-link button-link_small">фильтр:</h2>
+          <form class="form-vertical" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="form-vertical__group">
+              <legend class="form-vertical__group-title">Стоимость</legend>
+            </fieldset>
+            <fieldset class="form-vertical__group">
+              <legend class="form-vertical__group-title">Цвет</legend>
+              <ul class="form-vertical__control-list">
+                <li class="form-vertical__control form-vertical__control_checkbox">
+                  <input class="form-vertical__control-input visually-hidden" type="checkbox" name="color" value="black" checked>
+                  <span class="form-vertical__control-checkbox-toogle"></span>
+                  <span class="form-vertical__control-label">Черный</span>
+                </li>
+                <li class="form-vertical__control form-vertical__control_checkbox">
+                  <input class="form-vertical__control-input visually-hidden" type="checkbox" name="color" value="white" checked>
+                  <span class="form-vertical__control-checkbox-toogle"></span>
+                  <span class="form-vertical__control-label">Белый</span>
+                </li>
+                <li class="form-vertical__control form-vertical__control_checkbox">
+                  <input class="form-vertical__control-input visually-hidden" type="checkbox" name="color" value="blue">
+                  <span class="form-vertical__control-checkbox-toogle"></span>
+                  <span class="form-vertical__control-label">Синий</span>
+                </li>
+                <li class="form-vertical__control form-vertical__control_checkbox">
+                  <input class="form-vertical__control-input visually-hidden" type="checkbox" name="color" value="red">
+                  <span class="form-vertical__control-checkbox-toogle"></span>
+                  <span class="form-vertical__control-label">Красный</span>
+                </li>
+                <li class="form-vertical__control form-vertical__control_checkbox">
+                  <input class="form-vertical__control-input visually-hidden" type="checkbox" name="color" value="pink">
+                  <span class="form-vertical__control-checkbox-toogle"></span>
+                  <span class="form-vertical__control-label">Розовый</span>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form-vertical__group">
+              <legend class="form-vertical__group-title">Bluetooth</legend>
+              <ul class="form-vertical__control-list">
+                <li class="form-vertical__control form-vertical__control_radio">
+                  <input class="form-vertical__control-input visually-hidden" type="radio" name="bluetooth" value="true" checked>
+                  <span class="form-vertical__control-radio-toogle"></span>
+                  <span class="form-vertical__control-label">Есть</span>
+                </li>
+                <li class="form-vertical__control form-vertical__control_radio">
+                  <input class="form-vertical__control-input visually-hidden" type="radio" name="bluetooth" value="false">
+                  <span class="form-vertical__control-radio-toogle"></span>
+                  <span class="form-vertical__control-label">Нет</span>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button-link button-link_colored" type="button">Показать</button>
+          </form>
         </aside>
       </section>
     </div>
