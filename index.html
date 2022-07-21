@@ -10,7 +10,120 @@
   <h1 class="visually-hidden">Интернет магазин Device.</h1>
   <header class="header">
     <div class="header__content container">
+      <a class="logo element-states">
+        <svg class="logo__image" aria-hidden="true" focusable="false" width="145" height="36" xmlns="http://www.w3.org/2000/svg">
+          <use class="logo__image-text" xlink:href="images/logo.svg#text"></use>
+          <use class="logo__image-dot" xlink:href="images/logo.svg#dot"></use>
+        </svg>
+      </a>
       <nav class="site-navigation">
+        <form class="site-navigation__search form-search" action="https://echo.htmlacademy.ru/" method="get">
+          <label class="visually-hidden" for="search">Поиск.</label>
+          <div class="form-search__focus-input">
+            <input class="form-search__input" type="text" name="search" id="search" placeholder="Текст поиска">
+            <svg class="form-search__icon" aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="images/icons.svg#search"/>
+            </svg>
+          </div>
+          <div class="form-search__focus-button">
+            <button class="form-search__button" type="submit">Найти</button>
+          </div>
+        </form>
+        <ul class="menu-user">
+          <li class="menu-user__item">
+            <a class="menu-user__link element-states" href="#">
+              <svg class="menu-user__icon" aria-hidden="true" focusable="false" width="13" height="13" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="images/icons.svg#user"/>
+              </svg>
+              <span>Войти</span>
+            </a>
+          </li>
+          <li class="menu-user__item menu-user__item_compare">
+            <a class="menu-user__link element-states" href="#">
+              <svg class="menu-user__icon" aria-hidden="true" focusable="false" width="10" height="12" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="images/icons.svg#compare"/>
+              </svg>
+              <span>Сравнить</span>
+            </a>
+          </li>
+          <li class="menu-user__item">
+            <a class="menu-user__link element-states" href="#">
+              <span class="menu-user__badge">2</span>
+              <svg class="menu-user__icon" aria-hidden="true" focusable="false" width="16" height="14" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="images/icons.svg#cart"/>
+              </svg>
+              <span>Корзина</span>
+            </a>
+            <div class="cart">
+              <div class="cart__item-container">
+                <a class="cart__item element-states" href="#">
+                  <img class="cart__item-image" width="39" height="43" src="images/products/selfie-stick-amateur.jpg" alt="Любительская селфи-палка.">
+                  <p class="cart__item-title">Любительская селфи-палка</p>
+                </a>
+                <button class="cart__item-delete element-states" type="button">
+                  <svg aria-hidden="true" focusable="false" width="11" height="11" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="images/icons.svg#close"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="cart__item-container">
+                <a class="cart__item element-states" href="#">
+                  <img class="cart__item-image" width="39" height="43" src="images/products/selfie-stick-pro.jpg" alt="Профессиональная селфи-палка.">
+                  <p class="cart__item-title">Профессиональная селфи-палка</p>
+                </a>
+                <button class="cart__item-delete element-states" type="button">
+                  <svg aria-hidden="true" focusable="false" width="11" height="11" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="images/icons.svg#close"/>
+                  </svg>
+                </button>
+              </div>
+              <p class="cart__quantity">Товаров: 2</p>
+              <p class="cart__total-price">Сумма: 2000 ₽</p>
+              <a class="cart__button button-link" href="#">Открыть корзину</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="header__navigation navigation">
+          <li class="navigation__item navigation__item_dropdown">
+            <a href="#" class="navigation__link button-link element-states">
+              <span>Каталог товаров</span>
+              <svg class="navigation__dropdown-icon" aria-hidden="true" focusable="false" width="16" height="17" xmlns="http://www.w3.org/2000/svg">
+                <use class="navigation__dropdown-icon-minus" xlink:href="images/icons.svg#minus"/>
+                <use class="navigation__dropdown-icon-plus" xlink:href="images/icons.svg#plus"/>
+              </svg>
+            </a>
+            <ul class="navigation__submenu">
+              <li class="navigation__subitem">
+                <a href="#" class="navigation__subitem-link element-states">Виртуальная реальность</a>
+              </li>
+              <li class="navigation__subitem">
+                <a href="#" class="navigation__subitem-link element-states">Моноподы для cелфи</a>
+              </li>
+              <li class="navigation__subitem">
+                <a href="#" class="navigation__subitem-link element-states">Экшн-камеры</a>
+              </li>
+              <li class="navigation__subitem">
+                <a href="#" class="navigation__subitem-link element-states">Фитнес-браслеты</a>
+              </li>
+              <li class="navigation__subitem">
+                <a href="#" class="navigation__subitem-link element-states">Умные часы</a>
+              </li>
+              <li class="navigation__subitem"></li>
+              <li class="navigation__subitem">
+                <a href="#" class="navigation__subitem-link element-states">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link button-link element-states">Доставка</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link button-link element-states">Гарантия</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link button-link element-states">Контакты</a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
