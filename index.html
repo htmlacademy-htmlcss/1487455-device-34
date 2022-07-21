@@ -130,6 +130,50 @@
   <main class="main">
     <section class="latest-products">
       <h2 class="visually-hidden">Новинки.</h2>
+      <div class="slider container">
+        <ul class="slider__list">
+          <li>
+            <article class="slider__item">
+              <h3 class="visually-hidden">Квадрокоптер.</h3>
+              <b class="slider__title heading">Порхает как бабочка, жалит как пчела!</b>
+              <p class="slider__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <div class="slider__navigation">
+                <button class="slider__toogle slider__toogle-prev element-states" type="button">
+                  <span class="visually-hidden">Предыдущий.</span>
+                  <svg class="slider__toogle-icon" aria-hidden="true" focusable="false" width="20" height="60" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="images/icons.svg#slider-toogle"/>
+                  </svg>
+                </button>
+                <button class="slider__toogle slider__toogle-next element-states" type="button">
+                  <span class="visually-hidden">Следующий.</span>
+                  <svg class="slider__toogle-icon" aria-hidden="true" focusable="false" width="20" height="60" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="images/icons.svg#slider-toogle"/>
+                  </svg>
+                </button>
+                <a class="slider__link button-link button-link_colored" href="#">Подробнее</a>
+                <div class="slider__pagination">
+                  <button class="slider__pagination-item slider__pagination-item_current element-states" type="button">
+                    <span class="visually-hidden">Слайд 1.</span>
+                  </button>
+                  <button class="slider__pagination-item element-states" type="button">
+                    <span class="visually-hidden">Слайд 2.</span>
+                  </button>
+                  <button class="slider__pagination-item element-states" type="button">
+                    <span class="visually-hidden">Слайд 3.</span>
+                  </button>
+                </div>
+              </div>
+              <dl class="slider__parameter-list">
+                <dt class="slider__parameter-name">Дальность полета</dt>
+                <dd class="slider__parameter-value">800 м</dd>
+                <dt class="slider__parameter-name">Радиус поражения</dt>
+                <dd class="slider__parameter-value">50 м</dd>
+              </dl>
+              <img class="slider__image" src="images/products/quadrocopter.png" alt="Квадрокоптер.">
+            </article>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="catalog-navigation">
       <h2 class="visually-hidden">Категории товаров.</h2>
