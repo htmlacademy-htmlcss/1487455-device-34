@@ -144,6 +144,26 @@
     <div class="container_background">
       <section class="catalog container">
         <h2 class="visually-hidden">Каталог товаров.</h2>
+        <header class="catalog__sort">
+          <label for="sort" class="button-link button-link_small">сортировка:</label>
+          <select class="control-select" id="sort">
+            <option value="popular" selected>Популярные</option>
+            <option value="cheap">Подешевле</option>
+            <option value="expensive">Подороже</option>
+          </select>
+          <div class="catalog__control-group">
+            <button class="control-sort" type="button">
+              <svg class="control-sort__icon" aria-hidden="true" focusable="false" width="11" height="10" xmlns="www.w3.org/2000/svg">
+                <use xlink:href="images/icons.svg#sort"/>
+              </svg>
+            </button>
+            <button class="control-sort" type="button">
+              <svg class="control-sort__icon" aria-hidden="true" focusable="false" width="11" height="10" xmlns="www.w3.org/2000/svg">
+                <use xlink:href="images/icons.svg#sort" transform="rotate(180)" transform-origin="50%"/>
+              </svg>
+            </button>
+          </div>
+        </header>
         <aside class="catalog-filter">
           <h2 class="catalog__title button-link button-link_small">фильтр:</h2>
         </aside>
