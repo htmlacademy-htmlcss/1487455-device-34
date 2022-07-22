@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Raleway-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/Raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-400.woff2') format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-700.woff2') format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  --color-yellow: #ffe17f;
+  --color-dark-yellow: #ffc700;
+  --focus-outline: 2px solid #af4fff;
+  --color-gray: #f0f0f0;
+  --font-raleway: "Raleway", Arial, Tahoma, sans-serif;
+  --font-rubik: "Rubik", Arial, Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font: 18px/30px var(--font-rubik);
+  color: #444;
+}
+
+.container_background {
+  background: var(--color-gray);
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.heading {
+  margin: 0;
+  font: 800 50px/50px var(--font-raleway);
+  color: #000;
+}
+
+.subheading {
+  margin: 30px 0 15px;
+  font: 700 24px/30px var(--font-rubik);
+}
+
+.button-link {
+  border: 0;
+  font: 800 18px/21px "Raleway", Arial, Tahoma, sans-serif;
+  color: #000;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button-link_small {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/* Сделал отдельный класс для состояний элементов т.к. у некоторых одинаковых элементов они отличаются */
+.element-states:focus {
+  outline: var(--focus-outline);
+  outline-offset: 2px;
+}
+
+.element-states:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.element-states:active {
+  opacity: 0.3;
+}
+
+a.element-states:not([href]) {
+  opacity: 1;
+  cursor: default;
+}
